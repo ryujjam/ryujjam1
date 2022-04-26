@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Noox Dox',
   tagline: 'Your all-in-one resources for Noox',
-  url: 'https://ryujjam.github.io',
+  url: 'https://ryujjam.github.io/ryujjam1',
   baseUrl: '/',
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',

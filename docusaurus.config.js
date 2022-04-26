@@ -24,6 +24,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
@@ -52,25 +53,25 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'hiring',
+            docId: 'intro',
             position: 'left',
             label: 'Learn',
           },
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'faqs/faq',
             position: 'left',
             label: 'Guides',
           },
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'ecosystem/networks',
             position: 'left',
             label: 'Devs',
           },
           {
             type: 'doc',
-            docId: 'faq',
+            docId: 'faqs/faq',
             position: 'left',
             label: 'FAQ',
           },

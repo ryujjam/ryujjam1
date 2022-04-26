@@ -1,8 +1,9 @@
 ---
 sidebar_position: 1
+displayed_sidebar: faqSidebar
 ---
 
-# FAQ 1
+# FAQ
 
 ## :globe_with_meridians: General
 

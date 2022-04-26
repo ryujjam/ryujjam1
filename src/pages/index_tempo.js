@@ -5,7 +5,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import {Redirect} from '@docusaurus/router';
+import  { Redirect } from 'react-router-dom';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -26,6 +26,20 @@ function HomepageHeader() {
   );
 }
 
+// export default function Home() {
+//   return <Redirect to='/docs/intro' />;
+// }
+
 export default function Home() {
-  return <Redirect to="/docs" />;
-};
+  const {siteConfig} = useDocusaurusContext();
+  return (
+    <Layout
+      title={`Hello from ${siteConfig.title}`}
+      description="Description will go into a meta tag in <head />">
+      <HomepageHeader />
+      <main>
+        <HomepageFeatures />
+      </main>
+    </Layout>
+  );
+}

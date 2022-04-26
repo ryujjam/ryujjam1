@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Noox Docs',
+  title: 'Noox Dox',
   tagline: 'Your all-in-one resources for Noox',
   url: 'https://ryujjam.xyz',
   baseUrl: '/',
@@ -15,7 +15,9 @@ const config = {
   favicon: 'img/favicon.ico',
   organizationName: 'vandal0x', // Usually your GitHub org/user name.
   projectName: 'docu', // Usually your repo name.
-
+  // customFields: {
+  //   defaultDocsLandingPage: 'docs/intro',
+  // },
   presets: [
     [
       'classic',
@@ -38,7 +40,6 @@ const config = {
       }),
     ],
   ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -51,7 +52,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'hiring',
             position: 'left',
             label: 'Learn',
           },
@@ -129,6 +130,11 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: false,
+        respectPrefersColorScheme: false,
       },
     }),
 };

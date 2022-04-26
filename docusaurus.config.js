@@ -8,32 +8,32 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Noox Dox',
   tagline: 'Your all-in-one resources for Noox',
-  url: 'https://ryujjam.xyz',
+  url: 'https://ryujjam.github.io',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'vandal0x', // Usually your GitHub org/user name.
-  projectName: 'docu', // Usually your repo name.
+  favicon: './static/img/favicon.ico',
+  organizationName: 'ryujjam', // Usually your GitHub org/user name.
+  projectName: 'ryujjam1', // Usually your repo name.
   // customFields: {
   //   defaultDocsLandingPage: 'docs/intro',
   // },
   presets: [
     [
-      'classic',
+      '@docusaurus/preset-classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl:
+            // 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -48,7 +48,7 @@ const config = {
         title: 'Noox Docs',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo2.png',
+          src: 'img/nlogo.svg',
         },
         items: [
           {
@@ -57,15 +57,15 @@ const config = {
             position: 'left',
             label: 'Learn',
           },
+          // {
+          //   type: 'doc',
+          //   docId: 'faqs/faq',
+          //   position: 'left',
+          //   label: 'Guides',
+          // },
           {
             type: 'doc',
-            docId: 'faqs/faq',
-            position: 'left',
-            label: 'Guides',
-          },
-          {
-            type: 'doc',
-            docId: 'ecosystem/networks',
+            docId: 'devs/contracts',
             position: 'left',
             label: 'Devs',
           },
@@ -90,8 +90,16 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Learn',
+                to: '/',
+              },
+              {
+                label: 'Devs',
+                to: 'devs/contracts',
+              },
+              {
+                label: 'FAQ',
+                to: 'faqs/faq',
               },
             ],
           },
@@ -117,11 +125,11 @@ const config = {
             items: [
               {
                 label: 'Blog',
-                to: '/blog',
+                href: 'https://mirror.xyz/noox.eth',
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/nooxprotocol',
               },
             ],
           },

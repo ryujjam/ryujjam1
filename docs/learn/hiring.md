@@ -1,6 +1,6 @@
 ---
-sidebar_position: 2
+sidebar_position: 7
 displayed_sidebar: learnSidebar
 ---
 
-# Supported Networks
+# Hiring

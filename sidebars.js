@@ -13,11 +13,31 @@
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
-  // By default, Docusaurus generates a sidebar from the docs folder structure
-  learnSidebar: {
-    "Introduction": ['intro', 'concepts/achievement', 'concepts/protocol', 'ecosystem/networks', 'ecosystem/products'],
+  learnSidebar: [
+    {
+    Introduction: [
+      'intro',
+      'learn/vision'
+    ],
   },
-  faqSidebar: ['faqs/faq'],
+  {
+    Concepts: [
+      'learn/protocol',
+      'learn/achievement'
+    ],
+  },
+  {
+    Ecosystem: [
+      'learn/products',
+      'learn/networks',
+    ],
+  },
+  'learn/hiring',
+  ],
+  faqSidebar: 
+    ['faqs/faq'],
+  devSidebar:
+    ['devs/contracts'],
 };
 
 module.exports = sidebars;

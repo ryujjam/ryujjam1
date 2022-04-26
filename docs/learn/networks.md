@@ -1,6 +1,6 @@
 ---
-sidebar_position: 1
+sidebar_position: 6
 displayed_sidebar: learnSidebar
 ---
 
-# Products
+# Supported Networks
